@@ -64,6 +64,7 @@ body {
     center no-repeat;
   background-size: cover;
   position: relative;
+  transition: 0.5s;
   .wrapper-gnb {
     width: 100%;
     position: absolute;
@@ -86,11 +87,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: 0.5s;
+
     img {
       width: 100%;
       object-fit: cover;
     }
   }
+}
+.wrapper.hide {
+  background: transparent;
+  transition: 0.5s;
 }
 
 // main
@@ -125,15 +133,6 @@ body {
         background-clip: text;
         -moz-background-clip: text;
         pointer-events: none;
-      }
-    }
-    .main-enter {
-      width: 150px;
-      margin-top: 100px;
-      cursor: pointer;
-      img {
-        width: 100%;
-        object-fit: cover;
       }
     }
   }

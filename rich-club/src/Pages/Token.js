@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Section } from "react-fullpage";
 import Slide from "../SlideComponents/Slide";
 
@@ -77,6 +77,20 @@ function Token() {
         "This token prevents possible accidents that might occur on the road. Experience the limits of speed.",
     },
   ];
+
+  useLayoutEffect(() => {
+    const tokenElement = document.querySelector(".token");
+    const tokenRect = tokenElement.getBoundingClientRect();
+    console.log(tokenRect.top);
+
+    if (tokenRect.top <= 0) {
+      document.querySelector(".wrapper ").classList.remove("hide");
+      document.querySelector(".wrapper-bg ").style.opacity = 1;
+    } else {
+      document.querySelector(".wrapper ").classList.add("hide");
+      document.querySelector(".wrapper-bg ").style.opacity = 0;
+    }
+  });
 
   return (
     <Section className="token">

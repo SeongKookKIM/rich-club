@@ -1,4 +1,4 @@
-import { SectionsContainer, Section } from "react-fullpage";
+import { SectionsContainer } from "react-fullpage";
 import Main from "./Pages/Main";
 import Token from "./Pages/Token";
 import Tip from "./Pages/Tip";
