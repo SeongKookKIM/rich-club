@@ -11,8 +11,6 @@ function Main() {
   const textRef4 = useRef(null);
   const textRef5 = useRef(null);
 
-  const enterRef = useRef(null);
-
   const MainRef = useRef(null);
 
   useEffect(() => {

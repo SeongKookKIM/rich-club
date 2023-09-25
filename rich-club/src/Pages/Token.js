@@ -81,7 +81,6 @@ function Token() {
   useLayoutEffect(() => {
     const tokenElement = document.querySelector(".token");
     const tokenRect = tokenElement.getBoundingClientRect();
-    console.log(tokenRect.top);
 
     if (tokenRect.top <= 0) {
       document.querySelector(".wrapper ").classList.remove("hide");
