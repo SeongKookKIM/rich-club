@@ -136,3 +136,113 @@ body {
     }
   }
 }
+
+.swiper-button-prev {
+  background: url(../public/assets/image/main/Butten_Before.png) center center
+    no-repeat;
+  background-size: cover;
+  transform: scale(1.5);
+  top: 38%;
+  left: 25%;
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-next {
+  background: url(../public/assets/image/main/Butten_Next.png) center center
+    no-repeat;
+  background-size: cover;
+  transform: scale(1.5);
+  top: 38%;
+  right: 25%;
+  &::after {
+    display: none;
+  }
+}
+
+.token {
+  width: 100%;
+  .token-inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    @include flexCenter();
+    flex-direction: column;
+    overflow: hidden;
+    .swiper-slide-wrapper {
+      width: 100%;
+      height: 100%;
+      .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          width: 100%;
+          @include flexCenter();
+          flex-direction: column;
+          gap: 50px;
+          opacity: 0;
+          transition: 0.5s ease-in-out;
+
+          .slide-img {
+            width: 100%;
+            @include flexCenter();
+            img {
+              width: 500px;
+              object-fit: cover;
+            }
+          }
+          .slide-content {
+            max-width: 700px;
+
+            strong {
+              display: block;
+              text-align: center;
+              font-size: 47px;
+              font-family: $font-bold;
+              background: url(../public/assets/image/main/NFT_Main_Name.png)
+                bottom center no-repeat;
+              background-size: cover;
+              color: transparent;
+              -webkit-background-clip: text;
+              pointer-events: none;
+              padding: 10px 0;
+              position: relative;
+              text-transform: uppercase;
+
+              &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: url(../public/assets/image/main/NFT_Name_bar.png)
+                  center center no-repeat;
+                background-size: cover;
+              }
+            }
+            p {
+              font-size: 25px;
+              font-family: $font-light;
+              text-align: center;
+              padding: 30px 0;
+              line-height: 45px;
+              background: url(../public/assets/image/main/NFT_explanation.png)
+                center center no-repeat;
+              background-size: cover;
+              color: transparent;
+              -webkit-background-clip: text;
+              pointer-events: none;
+            }
+          }
+        }
+        .swiper-slide-active {
+          opacity: 1;
+          transition: 1.5s ease-in-out;
+        }
+      }
+    }
+  }
+}

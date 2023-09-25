@@ -1,13 +1,17 @@
 import { SectionsContainer, Section } from "react-fullpage";
 import Main from "./Pages/Main";
+import Token from "./Pages/Token";
+import Tip from "./Pages/Tip";
+import Born from "./Pages/Born";
+import Bless from "./Pages/Bless";
 
 function App() {
   const options = {
     activeClass: "active",
-    anchors: ["main", "sectionTwo", "sectionThree"],
+    anchors: ["main", "token", "tip", "born", "bless"],
     arrowNavigation: true,
     className: "SectionContainer",
-    delay: 1000,
+    delay: 2000,
     navigation: true,
     scrollBar: false,
     sectionClassName: "Section",
@@ -29,8 +33,10 @@ function App() {
         </div>
         <SectionsContainer {...options}>
           <Main />
-          <Section className="two">Page 2</Section>
-          <Section className="three">Page 3</Section>
+          <Token />
+          <Tip />
+          <Born />
+          <Bless />
         </SectionsContainer>
       </div>
     </div>
