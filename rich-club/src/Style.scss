@@ -163,10 +163,15 @@ body {
 }
 
 .token,
-.tip {
+.tip,
+.born,
+.bless {
   width: 100%;
+
   .token-inner,
-  .tip-inner {
+  .tip-inner,
+  .born-inner,
+  .bless-inner {
     width: 100%;
     height: 100%;
     max-width: 1230px;
