@@ -33,19 +33,6 @@ function Slide({ data }) {
             })}
           </>
         )}
-
-        {/* <SwiperSlide>
-          <div className="slide-img">
-            <img src="/assets/image/NFT/Token/9lung.png" alt="slide-img" />
-          </div>
-          <div className="slide-content">
-            <strong>Born To Be Rich</strong>
-            <p>
-              This token prevents death from heart disease such as heart attack,
-              high blood pressure, etc. Protect yourself from sudden death.
-            </p>
-          </div>
-        </SwiperSlide> */}
       </Swiper>
     </div>
   );
