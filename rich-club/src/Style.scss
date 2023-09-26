@@ -285,7 +285,8 @@ body {
     }
     .auction-content {
       max-width: 700px;
-      height: 270px;
+      height: 300px;
+
       strong {
         display: block;
         text-align: center;
@@ -334,7 +335,8 @@ body {
     .enter {
       width: 170px;
       margin-top: 50px;
-      cursor: pointer;
+      cursor: no-drop;
+      opacity: 0.4;
       img {
         width: 100%;
         object-fit: cover;

@@ -10,7 +10,11 @@ function Auction() {
           <img src="/assets/image/Auction_Coin.png" alt="Auction_Coin" />
         </div>
         <div className="auction-content">
-          <strong>AUCTION</strong>
+          <strong>
+            AUCTION
+            <br />
+            (comming soon)
+          </strong>
           <p>
             Collection ancient golden dinosaur bones, that are extreamely
             difficult town. It would be perfect to express your wealth
