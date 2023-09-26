@@ -4,11 +4,12 @@ import Token from "./Pages/Token";
 import Tip from "./Pages/Tip";
 import Born from "./Pages/Born";
 import Bless from "./Pages/Bless";
+import Auction from "./Pages/Auction";
 
 function App() {
   const options = {
     activeClass: "active",
-    anchors: ["main", "token", "tip", "born", "bless"],
+    anchors: ["main", "token", "tip", "born", "bless", "auction"],
     arrowNavigation: true,
     className: "SectionContainer",
     delay: 2000,
@@ -37,6 +38,7 @@ function App() {
           <Tip />
           <Born />
           <Bless />
+          <Auction />
         </SectionsContainer>
       </div>
     </div>
