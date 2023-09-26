@@ -70,7 +70,7 @@ body {
     center no-repeat;
   background-size: cover;
   position: relative;
-  transition: 0.5s;
+  transition: 0.2s;
   .wrapper-gnb {
     width: 100%;
     position: absolute;
@@ -114,7 +114,7 @@ body {
 }
 .wrapper.hide {
   background: transparent;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 // main
@@ -226,10 +226,15 @@ body {
   @include mobile {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
     top: auto !important;
-    right: auto;
-    bottom: 20px;
-    left: 50%;
+    right: 10px !important;
+    bottom: -30px;
+  }
+  a {
+    margin: 0 !important;
   }
 }
 
