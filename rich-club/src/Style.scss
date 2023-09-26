@@ -141,6 +141,34 @@ body {
         pointer-events: none;
       }
     }
+    .nft-link {
+      @include flexCenter();
+      gap: 50px;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 30px;
+        font-family: $font-bold;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background: url(../public/assets/image/main/NFT_Main_Name.png) bottom
+          center no-repeat;
+        background-size: cover;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        cursor: pointer;
+        border: 1px solid #bc9b4c;
+        border-radius: 10px;
+        img {
+          width: 50px;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 

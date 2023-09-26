@@ -35,6 +35,16 @@ function Main() {
           <p ref={textRef4}>But, if you are a millionaire, prove it to us.</p>
           <p ref={textRef5}>Are you a millionaire?</p>
         </div>
+        <div className="nft-link">
+          <button type="button">
+            <img src="/assets/image/open-sea.png" alt="opensea" />
+            OPEN SEA
+          </button>
+          <button type="button">
+            <img src="/assets/image/angry-monkey.png" alt="angry-monkey" />
+            ANGRY MONKEY
+          </button>
+        </div>
       </div>
     </Section>
   );
