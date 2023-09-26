@@ -14,7 +14,7 @@ function App() {
     anchors: ["main", "token", "tip", "born", "bless", "auction"],
     arrowNavigation: true,
     className: "SectionContainer",
-    delay: 2000,
+    delay: 1500,
     navigation: true,
     scrollBar: false,
     sectionClassName: "Section",
