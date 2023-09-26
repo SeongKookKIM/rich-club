@@ -131,7 +131,7 @@ body {
     margin: 0 auto;
     @include flexCenter();
     flex-direction: column;
-
+    position: relative;
     overflow: hidden;
 
     @include tablet {
@@ -219,22 +219,25 @@ body {
         }
       }
     }
+    .scroll {
+      display: none;
+      @include mobile {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+
+        img {
+          width: 30px;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 
 .Navigation {
   @include mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    top: auto !important;
-    right: 10px !important;
-    bottom: -30px;
-  }
-  a {
-    margin: 0 !important;
+    display: none;
   }
 }
 
@@ -371,7 +374,7 @@ body {
                 font-size: 37px;
               }
               @include mobile {
-                font-size: 24px;
+                font-size: 21px;
               }
 
               &::after {

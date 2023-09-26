@@ -45,6 +45,9 @@ function Main() {
             ANGRY MONKEY
           </button>
         </div>
+        <div className="scroll">
+          <img src="/assets/image/scroll.png" alt="scroll" />
+        </div>
       </div>
     </Section>
   );
